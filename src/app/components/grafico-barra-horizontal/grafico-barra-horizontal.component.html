@@ -1,0 +1,17 @@
+<ngx-charts-bar-horizontal class="chart-container"
+                           [scheme]="colorScheme"
+                           [results]="results"
+                           [gradient]="gradient"
+                           [xAxis]="showXAxis"
+                           [yAxis]="showYAxis"
+                           [legend]="showLegend"
+                           [showXAxisLabel]="showXAxisLabel"
+                           [showYAxisLabel]="showYAxisLabel"
+                           [xAxisLabel]="xAxisLabel"
+                           [yAxisLabel]="yAxisLabel"
+                           (select)="onSelect($event)"
+                           style="fill: black">
+</ngx-charts-bar-horizontal>
+
+<button class="btn btn-outline-dark"
+        (click)="randomizer()">Aleatorizar datos</button>
